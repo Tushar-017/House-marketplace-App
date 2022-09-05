@@ -729,6 +729,7 @@ button {
 .formButtonActive {
   padding: 0.9rem 3rem;
   background-color: #ffffff;
+  /* background-color: red; */
   font-weight: 600;
   border-radius: 1rem;
   font-size: 1rem;
@@ -818,4 +819,11 @@ button {
   margin-left: 1rem;
   font-size: 0.8rem;
   opacity: 0.75;
+}
+
+.formLatLng{
+  gap: 10px;
+}
+.formLatLng .formInputSmall{
+  width: 100%;
 }
