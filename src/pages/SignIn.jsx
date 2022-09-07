@@ -45,9 +45,9 @@ function SignIn() {
       <div className="pageContainer">
         <header >
           <div 
-            style={{paddingBottom:'1.2rem'}}
+            style={{paddingBottom:'2rem'}}
             className="pageHeader">
-            Welcome Back!
+            Welcome
           </div>
         </header>
 

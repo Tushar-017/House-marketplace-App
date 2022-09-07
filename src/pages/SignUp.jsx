@@ -55,8 +55,8 @@ function SignUp() {
     <>
       <div className="pageContainer">
         <header>
-          <div style={{paddingBottom:'1.2rem'}} className="pageHeader">
-            Welcome Back!
+          <div style={{paddingBottom:'2rem'}}  className="pageHeader">
+            Welcome
           </div>
         </header>
 
