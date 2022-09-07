@@ -76,7 +76,7 @@ function CreateListing() {
     if(geolocationEnabled){
       const response = await fetch(`https://maps.googleapis.com/maps/api/geocode/json?address=${address}&key=${GOOGLE_API}`)
       const data = await response.json()
- 
+
       geolocation.latitude= data.results[0]?.geometry.location.lat ?? 0 
       geolocation.longitude= data.results[0]?.geometry.location.lng ?? 0 
 

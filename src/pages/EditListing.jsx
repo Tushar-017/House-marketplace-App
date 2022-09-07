@@ -39,6 +39,7 @@ function EditListing() {
   const params = useParams()
   const isMounted = useRef()
 
+
   // Redirect if listing is not of user's
   useEffect(() => {
     if(listing && listing.userRef !== auth.currentUser.uid){
@@ -81,7 +82,7 @@ function EditListing() {
     return () => {
       isMounted.current = false
     }
-    // eslint-disable-next-line
+    // eslint-disable-next-line 
   },[isMounted])
 
   const onSubmit = async (e) => {
@@ -106,7 +107,7 @@ function EditListing() {
     if(geolocationEnabled){
       const response = await fetch(`https://maps.googleapis.com/maps/api/geocode/json?address=${address}&key=${GOOGLE_API}`)
       const data = await response.json()
- 
+
       geolocation.latitude= data.results[0]?.geometry.location.lat ?? 0 
       geolocation.longitude= data.results[0]?.geometry.location.lng ?? 0 
 
@@ -139,16 +140,17 @@ function EditListing() {
             switch (snapshot.state) {
               case 'paused':
                 console.log('Upload is paused');
-                break;
+                break
               case 'running':
                 console.log('Upload is running');
-                break;
+                break
               default:
-                break;
+                break
             }
           }, 
           (error) => {
             reject(error)
+            // console.log(error)
           }, 
           () => {
             getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
@@ -164,6 +166,7 @@ function EditListing() {
     ).catch(() => {
       setLoading(false)
       toast.error('Images not uploaded')
+      // console.log(error)
       return
     })
 
@@ -179,12 +182,15 @@ function EditListing() {
     delete formDataCopy.address
     !formDataCopy.offer && delete formDataCopy.discountedPrice
 
+
     // Update listing
-    const docRef = doc(db, 'listing',params.listingId)
+
+    const docRef = doc(db, 'listings', params.listingId)
     await updateDoc(docRef, formDataCopy)
     setLoading(false)
     toast.success('Listing saved')
     navigate(`/category/${formDataCopy.type}/${docRef.id}`)
+    
     
 
   }
