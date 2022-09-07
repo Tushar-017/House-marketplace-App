@@ -68,8 +68,8 @@ function Slider() {
                 style={
                   {background: `url(${data.imgUrls[0]}) center no-repeat`,
                   backgroundSize: 'cover',
-                  height:'26vh'}
-                } className="swiperSliderDiv">
+                }
+                } className="swiperSlideDiv">
                   <p className="swiperSlideText">{data.name}</p>
                   <p className="swiperSlidePrice">
                     ${data.discountedPrice ?? data.regularPrice}{' '}{data.type === 'rent' && '/month'}

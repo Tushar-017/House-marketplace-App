@@ -55,12 +55,12 @@ function SignUp() {
     <>
       <div className="pageContainer">
         <header>
-          <div className="pageHeader">
+          <div style={{paddingBottom:'1.2rem'}} className="pageHeader">
             Welcome Back!
           </div>
         </header>
 
-        <form onSubmit={onSubmit}>
+        <form onSubmit={onSubmit} className='inputForms'>
           <input
             type="name" 
             placeholder="Name" 

@@ -184,6 +184,10 @@ button {
   color: #2c2c2c;
 }
 
+.inputForms{
+  padding-inline: 1rem;
+}
+
 .nameInput {
   margin-bottom: 2rem;
   background: url('./assets/svg/badgeIcon.svg') #ffffff 2.5% center no-repeat;
@@ -327,9 +331,21 @@ button {
 
 .swiperSlideDiv {
   position: relative;
-  width: 100%;
-  height: 100%;
+  /* width: 100%; */
+  /* height: 100%; */
+  height: 24vh;
 }
+@media only screen and (min-width: 650px){
+  .swiperSlideDiv{
+    height: 38vh;
+  }
+}
+@media only screen and (min-width: 1100px){
+  .swiperSlideDiv{
+    height: 420px;
+  }
+}
+
 
 .swiperSlideImg {
   width: 100%;
