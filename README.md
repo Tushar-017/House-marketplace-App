@@ -1,6 +1,6 @@
 # House marketplace Using ReactJs | Firebase |
 
-## [Check it live here](https://marketplace-for-house-app-s.vercel.app/)
+## [Check it live here](https://marketplace-for-house-app-s.vercel.app/){:target="\_blank"}
 
 <img src="images/app-wall.png" />
 
