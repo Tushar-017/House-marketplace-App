@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -8,7 +8,7 @@ html::-webkit-scrollbar {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   background-color: #f2f4f8;
   margin: 0;
   box-sizing: border-box;
@@ -37,7 +37,7 @@ button {
   height: 3rem;
   width: 100%;
   outline: none;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   padding: 0 3rem;
   font-size: 1rem;
 }
@@ -93,6 +93,7 @@ button {
 .explore {
   margin: 1rem;
 }
+
 @media (min-width: 1024px) {
   .pageContainer,
   .offers,
@@ -101,6 +102,14 @@ button {
   .category,
   .explore {
     margin: 3rem;
+  }
+  .pageContainer1 {
+    /* width: 100%; */
+    padding-block: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -151,8 +160,8 @@ button {
   justify-content: center;
   align-items: center;
 }
-@media only screen and (max-width: 500px){
-  .navbar{
+@media only screen and (max-width: 500px) {
+  .navbar {
     height: 65px;
   }
 }
@@ -189,18 +198,26 @@ button {
   color: #2c2c2c;
 }
 
-.inputForms{
+.inputForms {
   padding-inline: 0.6rem;
+  /* width: 500px; */
+}
+
+@media (min-width: 1024px) {
+  .inputForms {
+    /* padding-inline: 0.6rem; */
+    width: 500px;
+  }
 }
 
 .nameInput {
   margin-bottom: 2rem;
-  background: url('./assets/svg/badgeIcon.svg') #ffffff 2.5% center no-repeat;
+  background: url("./assets/svg/badgeIcon.svg") #ffffff 2.5% center no-repeat;
 }
 
 .emailInput {
   margin-bottom: 2rem;
-  background: url('./assets/svg/personIcon.svg') #ffffff 2.5% center no-repeat;
+  background: url("./assets/svg/personIcon.svg") #ffffff 2.5% center no-repeat;
 }
 
 .passwordInputDiv {
@@ -209,7 +226,7 @@ button {
 
 .passwordInput {
   margin-bottom: 2rem;
-  background: url('./assets/svg/lockIcon.svg') #ffffff 2.5% center no-repeat;
+  background: url("./assets/svg/lockIcon.svg") #ffffff 2.5% center no-repeat;
 }
 
 .showPassword {
@@ -225,6 +242,15 @@ button {
   color: #00cc66;
   font-weight: 600;
   text-align: right;
+}
+.testLogin {
+  cursor: pointer;
+  color: #0b8ce8;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 2.5px;
+  border: 1px solid #0b8ce8;
 }
 
 .signInBar,
@@ -340,17 +366,16 @@ button {
   /* height: 100%; */
   height: 24vh;
 }
-@media only screen and (min-width: 650px){
-  .swiperSlideDiv{
+@media only screen and (min-width: 650px) {
+  .swiperSlideDiv {
     height: 38vh;
   }
 }
-@media only screen and (min-width: 1100px){
-  .swiperSlideDiv{
+@media only screen and (min-width: 1100px) {
+  .swiperSlideDiv {
     height: 420px;
   }
 }
-
 
 .swiperSlideImg {
   width: 100%;
@@ -642,7 +667,7 @@ button {
 
 .logOut {
   cursor: pointer;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   font-weight: 600;
   color: #ffffff;
@@ -775,7 +800,7 @@ button {
 .formInputFile {
   border: none;
   outline: none;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 .formInputSmall,
 .formInputFile {
@@ -842,9 +867,9 @@ button {
   opacity: 0.75;
 }
 
-.formLatLng{
+.formLatLng {
   gap: 10px;
 }
-.formLatLng .formInputSmall{
+.formLatLng .formInputSmall {
   width: 100%;
 }
